@@ -112,6 +112,7 @@ a {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    margin-right: 300px;
 }
 
 /* Content Title Guid  */
@@ -149,6 +150,8 @@ a {
 
 /* Content Slider */
 .content .slider {
+    position: fixed;
+    right: 30px;
     display: flex;
     flex-direction: column;
     line-height: 40px;
