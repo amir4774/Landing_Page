@@ -112,7 +112,7 @@ a {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    margin-right: 300px;
+    margin-right: 20%;
 }
 
 /* Content Title Guid  */
@@ -206,15 +206,18 @@ a {
 
 /* Content Buttom Item One */
 .content-buttom .container .item-one {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
     margin-bottom: 500px;
 }
 
 .content-buttom .container .item-one .picture-one {
     background: url(images/cycle.png);
-    float: right;
+    /* float: right; */
 }
 
-.content-buttom .container .item-one .number {
+.content-buttom .container .number {
     top: 1250px;
 }
 
@@ -265,28 +268,35 @@ a {
 
 /* Content Buttom Item Two */
 .content-buttom .container .item-two {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     margin-bottom: 500px;
 }
 
 .content-buttom .container .item-two .picture-two {
     background: url(images/item-two-picture.png);
-    float: left;
+    /* float: left; */
 }
 
-.content-buttom .container .item-two .number {
-    top: 2170px;
-    right: 600px;
+.content-buttom .container .two {
+    top: 2200px;
+    right: 38%;
 }
 
 .content-buttom .container .item-two .title-two {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    transform: translate(150px, -60px);
+    transform: translate(50px, -60px);
+    width: 50%;
 }
 
 /* Content Buttom Item Three */
 .content-buttom .container .item-three {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
     margin-bottom: 250px;
 }
 
@@ -295,15 +305,15 @@ a {
     float: right;
 }
 
-.content-buttom .container .item-three .number {
-    top: 3100px;
+.content-buttom .container .three {
+    top: 3200px;
 }
 
 .content-buttom .container .item-three .title-three {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    transform: translate(120px, -50px);
+    transform: translate(120px, -30px);
 }
 
 /* Footer */
@@ -363,3 +373,55 @@ a {
     font-weight: bold;
     font-size: 1.1rem;
 }
+
+/* Media */
+@media (max-width: 1490px) {
+    .content-buttom .container {
+        margin: 0 50px;
+    }
+}
+
+@media (max-width: 1375px) {
+    .content-buttom .container {
+        margin: 0 10px;
+    }
+
+    .content-buttom .container .item-two .title-two {
+        transform: translate(0px, -60px);
+    }
+
+    .content-buttom .container .two {
+        right: 40%;
+    }
+    
+    .content-buttom .container .footer {
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 1330px) {
+    .content .title {
+        margin-right: 15%;
+    }
+}
+
+@media (max-width: 1256px) {
+    /* .content-buttom .container .number {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .content-buttom .container .one {
+        top: 1250px;
+    }
+    
+    .content-buttom .container .item-one {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 500px;
+    } */
+}
+
+
+
