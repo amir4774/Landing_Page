@@ -9,7 +9,84 @@
     font-family: 'Gilory';
 }
 
-/* scrollbar */
+:root {
+    --text-color: #fff;
+    --Gilory-font: 'Gilory';
+    --guide-color: #FBD784;
+    --background-color: #0B1D26;
+}
+
+/* Global */
+.guide {
+    color: var(--guide-color);
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.guide .text {
+    font-family: var(--Gilory-font);
+    letter-spacing: 0.3rem;
+}
+
+.guide .line {
+    position: relative;
+    bottom: 8px;
+}
+
+.picture {
+    height: 650px;
+    width: 500px;
+    margin-top: -190px;
+}
+
+.number {
+    font-size: 12rem;
+    font-weight: bolder;
+    font-family: var(--Gilory-font);
+    opacity: 0.1;
+    position: absolute;
+}
+
+.content-buttom .text-title {
+    width: 555px;
+    color: var(--text-color);
+    font-size: 4rem;
+}
+
+.content-buttom .text-body {
+    line-height: 2.2rem;
+    width: 555px;
+    text-align: justify;
+    font-family: var(--Gilory-font);
+    font-weight: bold;
+}
+
+.more {
+    font-family: var(--Gilory-font);
+    color: var(--guide-color);
+}
+
+.content-buttom .container .footer .right-footer .more {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.content-buttom .container .footer .right-footer .title {
+    color: var(--guide-color);
+    font-family: var(--Gilory-font);
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* a tags */
+a {
+    font-family: 'Gilory';
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Scrollbar */
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -29,13 +106,6 @@
     background: #aaa;
 }
 
-/* a tags */
-a {
-    font-family: 'Gilory';
-    text-decoration: none;
-    color: #fff;
-}
-
 /* Cloud-Background */
 .cloud-background {
     background: url(images/Cloud-background.png) no-repeat center center/cover;
@@ -52,7 +122,7 @@ a {
 .header {
     display: flex;
     justify-content: space-between;
-    color: #fff;
+    color: var(--text-color);
     padding: 30px;
 }
 
@@ -69,7 +139,7 @@ a {
 
 /* Show Case Account */
 .header .account {
-    font-family: 'Gilory';
+    font-family: var(--Gilory-font);
     cursor: pointer;
 }
 
@@ -88,9 +158,9 @@ a {
 
 /* Content Social */
 .content .social {
-    font-family: 'Gilory';
+    font-family: var(--Gilory-font);
     font-weight: bolder;
-    color: #fff;
+    color: var(--text-color);
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -116,36 +186,19 @@ a {
     margin-left: auto;
 }
 
-/* Content Title Guid  */
-/* Global */
-.guide {
-    color: #FBD784;
-    text-transform: uppercase;
-    font-weight: bolder;
-}
-
-.guide .text {
-    font-family: 'Gilory';
-    letter-spacing: 0.3rem;
-}
-
-.guide .line {
-    position: relative;
-    bottom: 8px;
-}
 
 /* Content Title Text*/
 .content .title .text-title {
     width: 800px;
     text-transform: capitalize;
-    color: #fff;
+    color: var(--text-color);
     font-size: 5rem;
 }
 
 /* Content Title Scroll*/
 .content .title .scroll {
-    color: #fff;
-    font-family: 'Gilory';
+    color: var(--text-color);
+    font-family: var(--Gilory-font);
     font-weight: bolder;
 }
 
@@ -159,10 +212,10 @@ a {
     gap: 20px;
     padding-right: 20px;
     border-right: 4px solid #aaa;
-    color: #fff;
+    color: var(--text-color);
     text-align: right;
     font-weight: bold;
-    font-family: 'Gilory';
+    font-family: var(--Gilory-font);
 }
 
 /* Content Slider Selected */
@@ -197,19 +250,30 @@ a {
 /* Content Buttom */
 .content-buttom {
     margin-top: -100px;
-    background: #0B1D26;
-    color: #fff;
+    background: var(--background-color);
+    color: var(--text-color);
 }
 
 .content-buttom .container {
     margin: 0 150px;
 }
 
+/* Container-Item */
+.container-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Titles in Items */
+.content-buttom .container .title {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
 /* Content Buttom Item One */
 .content-buttom .container .item-one {
-    display: flex;
     flex-direction: row-reverse;
-    justify-content: space-between;
     margin-bottom: 500px;
 }
 
@@ -222,55 +286,12 @@ a {
 }
 
 .content-buttom .container .item-one .title-one {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
     transform: translate(100px, -50px);
-}
-
-/* Global */
-.picture {
-    height: 650px;
-    width: 500px;
-    margin-top: -190px;
-}
-
-/* Global */
-.number {
-    font-size: 12rem;
-    font-weight: bolder;
-    font-family: 'Gilory';
-    opacity: 0.1;
-    position: absolute;
-}
-
-/* Global */
-.content-buttom .text-title {
-    width: 555px;
-    color: #fff;
-    font-size: 4rem;
-}
-
-/* Global */
-.content-buttom .text-body {
-    line-height: 2.2rem;
-    width: 555px;
-    text-align: justify;
-    font-family: 'Gilory';
-    font-weight: bold;
-}
-
-/* Global */
-.more {
-    font-family: 'Gilory';
-    color: #FBD784;
 }
 
 /* Content Buttom Item Two */
 .content-buttom .container .item-two {
-    display: flex;
     flex-direction: row;
-    justify-content: space-between;
     margin-bottom: 500px;
 }
 
@@ -284,18 +305,13 @@ a {
 }
 
 .content-buttom .container .item-two .title-two {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
     transform: translate(50px, -60px);
     width: 50%;
 }
 
 /* Content Buttom Item Three */
 .content-buttom .container .item-three {
-    display: flex;
     flex-direction: row-reverse;
-    justify-content: space-between;
     margin-bottom: 250px;
 }
 
@@ -308,9 +324,6 @@ a {
 }
 
 .content-buttom .container .item-three .title-three {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
     transform: translate(120px, -30px);
 }
 
@@ -335,7 +348,7 @@ a {
 }
 
 .content-buttom .container .footer .left-footer p {
-    font-family: 'Gilory';
+    font-family: var(--Gilory-font);
     font-weight: bold;
     width: 260px;
     line-height: 1.7rem;
@@ -357,21 +370,6 @@ a {
     margin-right: 170px;
 }
 
-/* Global */
-.content-buttom .container .footer .right-footer .more {
-    display: flex;
-    flex-direction: column;
-    gap: 22px;
-}
-
-/* Global */
-.content-buttom .container .footer .right-footer .title {
-    color: #FBD784;
-    font-family: 'Gilory';
-    font-weight: bold;
-    font-size: 1.1rem;
-}
-
 /* Media */
 @media (max-width: 1440px) {
     .content-buttom .container {
@@ -379,7 +377,7 @@ a {
     }
 }
 
-@media (max-width: 1024px) {    
+@media (max-width: 1024px) {
     .content .social {
         flex-direction: row;
         margin-top: -20px;
@@ -419,10 +417,7 @@ a {
         align-items: center;
     }
 
-    .content-buttom .text-title {
-        text-align: left;
-    }
-
+    .content-buttom .text-title,
     .content-buttom .text-body {
         text-align: left;
     }
@@ -468,12 +463,14 @@ a {
     }
 
     .content-buttom .container .footer {
-        margin: 0px 0px;
+        margin: 0;
         margin-top: -60px;
     }
 }
 
-@media (max-width: 480px) {
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+@media (max-width: 500px) {
 
 
     .header .tags {
@@ -524,9 +521,6 @@ a {
     .content-buttom .text-body {
         line-height: 2.2rem;
         width: 100%;
-        text-align: left;
-        font-family: 'Gilory';
-        font-weight: bold;
     }
 
     .picture {
@@ -541,7 +535,7 @@ a {
     }
 
     .content-buttom .container .two {
-        top: 2600px;
+        top: 165rem;
         left: 40%;
         transform: translateX(-50%);
     }
@@ -552,7 +546,7 @@ a {
     }
 
     .content-buttom .container .three {
-        top: 3950px;
+        top: 248rem;
         left: 50%;
         transform: translateX(-50%);
     }
@@ -564,9 +558,7 @@ a {
 
     /* Footer */
     .content-buttom .container .footer {
-        display: flex;
         flex-direction: column;
-        justify-content: space-between;
         margin-top: -120px;
         width: 90%;
     }
@@ -579,7 +571,7 @@ a {
     }
     
     .content-buttom .container .footer .left-footer p {
-        font-family: 'Gilory';
+        font-family: var(--Gilory-font);
         font-weight: bold;
         width: 100%;
         line-height: 1.3rem;
@@ -590,7 +582,6 @@ a {
     }
     
     .content-buttom .container .footer .right-footer {
-        display: flex;
         justify-content: space-around;
         width: 100%;
         margin-bottom: 30px;
